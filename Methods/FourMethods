@@ -1,0 +1,47 @@
+/*********************** Multiple Functions*********************/
+
+package com.Box; 
+
+public class FourMethods {
+	
+	
+	
+    int length;
+	 int height;
+	
+	int volume()
+	{
+	System.out.println("Working");
+	return length*height;
+	}
+	
+	static void printLine()
+	{
+		System.out.println("Print Only : Not Return");
+		
+	}
+	 int SetDim()
+	{
+		return length*height;
+	}
+
+	public static void main(String[] args) {
+		
+		printLine();
+		
+		
+		FourMethods bvolume = new FourMethods();
+		
+		
+	    bvolume.length=10;
+	    bvolume.height =9;
+		System.out.println("Volume Is:" + bvolume.volume());//Invoke
+		
+		bvolume.SetDim();
+		//System.out.println(length);
+		//System.out.println(bvolume.height);
+		
+
+	}
+
+	}
